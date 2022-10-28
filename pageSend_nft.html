@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1420" />
+	<title>GRAEGRAE</title>
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+  <script src="js/common.js"></script>
+</head>
+
+<body>
+	<section id="wrap">
+		<aside id="aside">
+			<div class="topArea">
+				<h1>graegrae</h1>
+			</div>
+			<ul id="gnb">
+				<li>
+					<div class="depth1">캠페인 만들기</div>
+					<ul>
+						<li><a href="#">캠페인 생성 내역</a></li>
+						<li><a href="#">NFT 발행 내역</a></li>
+						<li><a href="./pageEventHistory.html">이벤트 생성 내역</a></li>
+						<li><a href="./pageMintingHistory.html">민팅 사이트 생성 내역</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="depth1">NFT 운영</div>
+					<ul>
+						<li class="active"><a href="./pageSend_nft.html">NFT 전송 현황</a></li>
+						<li><a href="#">TOKEN 전송 현황</a></li>
+						<li><a href="#">COIN 전송 현황</a></li>
+						<li><a href="#">SNAP SHOT 전송 현황</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="depth1">회원 관리</div>
+					<ul>
+						<li><a href="#">회원 관리</a></li>
+						<li><a href="#">관리자 문의</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="depth1">상품 관리</div>
+					<ul>
+						<li><a href="#">이용권 신청 내역</a></li>
+						<li><a href="#">상품관리</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="depth1">커뮤니티 관리</div>
+					<ul>
+						<li><a href="#">문의사항 관리</a></li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<article id="container">
+			<header id="header">
+				<div class="boxTool">
+					<div class="info">
+						<div class="name">홍길동 님 환영합니다.</div>
+						<button type="button" class="btnProfile">My Profile</button>
+					</div>
+					<button type="button" class="btnLogin">Logout</button>
+          <div class="boxMypage">
+            <div class="name">홍길동 님</div>
+            <div class="type">기업고객</div>
+            <ul>
+              <li><a href="#">슬롯 구매하기</a></li>
+              <li><a href="#">결제 관리</a></li>
+              <li><a href="#">회원정보 수정</a></li>
+              <li><a href="#">문의사항</a></li>
+            </ul>
+          </div>
+				</div>
+			</header>
+			<div class="contents">
+				<div class="contTop">
+					<h2>NFT 전송 현황</h2>
+          <div class="pos">전체 100 건</div>
+				</div>
+				<div class="boxTableSch">
+					<div class="selectGroup">
+						<div class="selected">선택</div>
+						<ul>
+							<li>선택1</li>
+							<li>선택2</li>
+							<li>선택3</li>
+						</ul>
+					</div>
+					<input type="text" />
+					<button type="button" class="btn">조회</button>
+				</div>
+        <div class="tableGroup">
+					<table class="tableBasic">
+						<colgroup>
+							<col width="50" />
+							<col width="130" />
+							<col width="130" />
+							<col width="140" />
+							<col width="150" />
+							<col width="150" />
+							<col width="100" />
+              <col width="50" />
+							<col width="110" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th></th>
+								<th>아이디</th>
+                <th>전송 이름</th>
+								<th>전송 날짜</th>
+								<th>컨트렉트 주소</th>
+								<th>출금지갑</th>
+                <th>전송수량</th>
+								<th class="ta-c">상태</th>
+								<th class="ta-c">다운로드</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="num">15</td>
+								<td>eifsheifb</td>
+                <td>NFT 전송 네임</td>
+								<td>22.09.01 11:12:34</td>
+								<td>0x2e5ifa...666n38</td>
+								<td>0x2e5ifa...666n38</td>
+                <td>10,000</td>
+								<td class="ta-c"><span class="c-blue">성공</span></td>
+								<td class="ta-c"><button type="button" class="btn btn--rect">다운로드</button></td>
+							</tr>
+							<tr>
+								<td class="num">14</td>
+								<td>eifsheifb</td>
+                <td>NFT 전송 네임</td>
+								<td>22.09.01 11:12:34</td>
+								<td>0x2e5ifa...666n38</td>
+								<td>0x2e5ifa...666n38</td>
+                <td>10,000</td>
+								<td class="ta-c"><span class="c-red">실패</span></td>
+								<td class="ta-c">-</td>
+							</tr>
+							<tr>
+								<td class="num">13</td>
+								<td>eifsheifb</td>
+                <td>NFT 전송 네임</td>
+								<td>22.09.01 11:12:34</td>
+								<td>0x2e5ifa...666n38</td>
+								<td>0x2e5ifa...666n38</td>
+                <td>10,000</td>
+								<td class="ta-c"><span class="c-blue">성공</span></td>
+								<td class="ta-c"><button type="button" class="btn btn--rect">다운로드</button></td>
+							</tr>
+							<tr>
+								<td class="num">12</td>
+								<td>eifsheifb</td>
+                <td>NFT 전송 네임</td>
+								<td>22.09.01 11:12:34</td>
+								<td>0x2e5ifa...666n38</td>
+								<td>0x2e5ifa...666n38</td>
+                <td>10,000</td>
+								<td class="ta-c"><span class="c-red">실패</span></td>
+								<td class="ta-c">-</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="tblPage">
+						<div class="pageGroup">
+							<a href="#" class="first dis">처음</a><!-- 비활성화 인 경우 dis 클래스 부여 -->
+							<a href="#" class="prev dis">이전</a>
+							<div class="page">1/10</div>
+							<a href="#" class="next">다음</a>
+							<a href="#" class="last">마지막</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+</html>
