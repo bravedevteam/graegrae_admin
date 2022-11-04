@@ -69,8 +69,7 @@ $(function(){
     var _parents = $(this).parents(".boxTabGroup");
     if(!$(this).hasClass("active")){
       $(this).addClass("active").siblings().removeClass("active");
-      _parents.children(".boxTabCont").removeClass("active");
-      $("#"+target).addClass("active");
+      $("#"+target).addClass("active").siblings(".boxTabCont").removeClass("active");
     }
   });
 
@@ -78,7 +77,7 @@ $(function(){
   $(".open--popup").click(function(){
     var target = $(this).attr("data-pop");
     $(".popBasic").hide();
-    $("#"+target).show();
+    $("#"+target).css("display", "flex");
     $("#dim").show();
     $("body").css("overflow", "hidden");
   });

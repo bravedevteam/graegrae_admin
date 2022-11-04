@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1420" />
+	<title>GRAEGRAE</title>
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+  <script src="js/common.js"></script>
+</head>
+
+<body>
+	<section id="wrap">
+		<aside id="aside">
+			<div class="topArea">
+				<h1>graegrae</h1>
+			</div>
+			<ul id="gnb">
+				<li>
+					<div class="depth1">캠페인 만들기</div>
+					<ul>
+						<li><a href="./pageCampaignHistory.html">캠페인 생성 내역</a></li>
+						<li><a href="./pagePublishHistory.html">NFT 발행 내역</a></li>
+						<li><a href="./pageEventHistory.html">이벤트 생성 내역</a></li>
+						<li><a href="./pageMintingHistory.html">민팅 사이트 생성 내역</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="depth1">NFT 운영</div>
+					<ul>
+						<li><a href="./pageSend_nft.html">NFT 전송 현황</a></li>
+						<li><a href="./pageSend_token.html">TOKEN 전송 현황</a></li>
+						<li><a href="./pageSend_coin.html">COIN 전송 현황</a></li>
+						<li><a href="./pageSend_snap.html">SNAP SHOT 전송 현황</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="depth1">회원 관리</div>
+					<ul>
+						<li><a href="./pageMember.html">회원 관리</a></li>
+						<li><a href="./pageAdmin.html">관리자 문의</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="depth1">상품 관리</div>
+					<ul>
+						<li><a href="./pageVoucher.html">이용권 신청 내역</a></li>
+						<li class="active"><a href="./pageProduct.html">상품관리</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="depth1">커뮤니티 관리</div>
+					<ul>
+						<li><a href="./pageQna.html">문의사항 관리</a></li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<article id="container">
+			<header id="header">
+				<div class="boxTool">
+					<div class="info">
+						<div class="name">홍길동 님 환영합니다.</div>
+						<button type="button" class="btnProfile">My Profile</button>
+					</div>
+					<button type="button" class="btnLogin">Logout</button>
+          <div class="boxMypage">
+            <div class="name">홍길동 님</div>
+            <div class="type">기업고객</div>
+            <ul>
+              <li><a href="#">슬롯 구매하기</a></li>
+              <li><a href="#">결제 관리</a></li>
+              <li><a href="#">회원정보 수정</a></li>
+              <li><a href="#">문의사항</a></li>
+            </ul>
+          </div>
+				</div>
+			</header>
+			<div class="contents">
+				<div class="contTop">
+					<h2>상품등록</h2>
+				</div>
+        <div class="tableGroup">
+          <table class="tableBasic type--vertical type--sm">
+            <colgroup>
+              <col width="200" />
+              <col width="800" />
+            </colgroup>
+            <tr>
+              <th>상품구분</th>
+              <td>
+                <input type="radio" name="chk_prd1" id="chk_prd1_1" checked="checked" />
+                <label for="chk_prd1_1">캠페인 만들기</label>
+                <input type="radio" name="chk_prd1" id="chk_prd1_2" />
+                <label for="chk_prd1_2">운영권</label>
+                <input type="radio" name="chk_prd1" id="chk_prd1_3" />
+                <label for="chk_prd1_3">패키지 상품</label>
+              </td>
+            </tr>
+            <tr>
+              <th>상품명</th>
+              <td><input type="text" placeholder="상품명을 입력하세요." /></td>
+            </tr>
+            <tr>
+              <th>이용권 수량</th>
+              <td>
+                <div class="selectGroup">
+                  <div href="#" class="selected">선택1</div>
+                  <ul>
+                    <li>선택1</li>
+                    <li>선택2</li>
+                    <li>선택3</li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>기간설정</th>
+              <td>
+                <div class="selectGroup">
+                  <div href="#" class="selected">선택1</div>
+                  <ul>
+                    <li>선택1</li>
+                    <li>선택2</li>
+                    <li>선택3</li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>원 가격</th>
+              <td><input type="text" placeholde="가격을 입력하세요." /></td>
+            </tr>
+            <tr>
+              <th>할인 가격</th>
+              <td>
+                할인 명칭&nbsp;&nbsp;
+                <input type="text" class="w200" placeholder="명칭을 입력하세요." />&nbsp;&nbsp;&nbsp;&nbsp;
+                / 가격&nbsp;&nbsp;
+                <input type="text" class="w200" placeholder="할인 가격을 입력하세요." />
+              </td>
+            </tr>
+            <tr>
+              <th>상품설명</th>
+              <td>
+                <textarea placeholder="상품설명을 입력하세요."></textarea>
+                <p class="desc">※ 상품 설명은 100자 이내로 입력해 주세요.</p>
+              </td>
+            </tr>
+            <tr>
+              <th>게시여부</th>
+              <td>
+                <input type="radio" name="chk_prd2" id="chk_prd2_1" checked="checked" />
+                <label for="chk_prd2_1">게시</label>
+                <input type="radio" name="chk_prd2" id="chk_prd2_2" />
+                <label for="chk_prd2_2">미게시</label>
+              </td>
+            </tr>
+          </table>
+          <div class="btnArea mt40 ta-c">
+            <button type="button" class="btn btn--large btn--white">취소</button>
+            <button type="button" class="btn btn--large ml10">등록</button>
+          </div>
+        </div>
+			</div>
+		</article>
+	</section>
+</html>
