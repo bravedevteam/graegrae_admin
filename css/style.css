@@ -236,6 +236,7 @@ span.imp { color:#f00; line-height:1; vertical-align:middle; }
 .tableBasic.type--sm .selectGroup .selected { height:36px; padding-right:40px; line-height:36px; }
 .tableBasic.type--sm .selectGroup .selected:before { right:36px; }
 .tableBasic.type--sm .selectGroup .selected:after { width:8px; height:5px; right:14px; margin-top:-3px; }
+.tableBasic.type--sm .selectGroup ul { top:35px; }
 
 .inSearch { overflow:hidden; }
 .inSearch input[type="text"] { width:calc(100% - 100px); }

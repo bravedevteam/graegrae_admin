@@ -5,18 +5,20 @@ $(function(){
   var sel_list = sel_select.children("ul");
   sel_list.slideUp(0);
   sel_select.click(function(){
-    if(sel_select.hasClass("is--open")){
-      sel_select.removeClass("is--open");
+    if($(this).hasClass("is--open")){
+      $(this).removeClass("is--open");
       sel_list.slideUp(300);
+      $(this).children("ul").slideUp(300);
     }else{
-      sel_select.addClass("is--open");
-      sel_list.slideDown(300);
+      $(this).addClass("is--open");
+      sel_list.slideUp(300);
+      $(this).children("ul").slideDown(300);
     }
   });
 
   sel_list.children("li").click(function(){
     sel_name = $(this).text();
-    sel_select.children(".selected").html('').text(sel_name);
+    $(this).parents(".selectGroup").children(".selected").html('').text(sel_name);
   });
 
   // 메인넷 선택
