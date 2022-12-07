@@ -81,36 +81,11 @@
 			<div class="contents">
 				<div class="contTop boxTabGroup">
 					<h2>관리자 관리</h2>
+          <div class="pos mr20">
+            <button type="button" class="btn btn--white btn--large3 open--popup" data-pop="popAdmin">관리자 등록</button>
+          </div>
 				</div>
         <div class="tableGroup">
-          <h6 class="titSub">관리자 등록</h6>
-          <table class="tableBasic type--vertical">
-            <colgroup>
-              <col width="200" />
-              <col width="800" />
-            </colgroup>
-            <tr>
-              <th>아이디 조회</th>
-              <td>
-                <div class="inSearch">
-                  <input type="text" placeholder="아이디를 입력하세요." />
-                  <button type="button" class="btn btn--small2">조회</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th>아이디</th>
-              <td>Abx</td>
-            </tr>
-            <tr>
-              <th>이름</th>
-              <td>홍길동</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="tableGroup mt60">
-          <h6 class="titSub">관리자 목록</h6>
           <table class="tableBasic">
             <colgroup>
               <col width="160" />
@@ -126,24 +101,24 @@
             </thead>
             <tbody>
               <tr>
-                <td>eifshifb</td>
+                <td><a href="#" class="link">eifshifb</a></td>
                 <td class="ta-c">홍길동</td>
-                <td class="ta-c"><button type="button" class="btn btn--small3 btn--radius">삭제</button></td>
+                <td class="ta-c"><button type="button" class="btn btn--small3 btn--grayline">삭제</button></td>
               </tr>
               <tr>
-                <td>eifshifb</td>
+                <td><a href="#" class="link">eifshifb</a></td>
                 <td class="ta-c">홍길동</td>
-                <td class="ta-c"><button type="button" class="btn btn--small3 btn--radius">삭제</button></td>
+                <td class="ta-c"><button type="button" class="btn btn--small3 btn--grayline">삭제</button></td>
               </tr>
               <tr>
-                <td>eifshifb</td>
+                <td><a href="#" class="link">eifshifb</a></td>
                 <td class="ta-c">홍길동</td>
-                <td class="ta-c"><button type="button" class="btn btn--small3 btn--radius">삭제</button></td>
+                <td class="ta-c"><button type="button" class="btn btn--small3 btn--grayline">삭제</button></td>
               </tr>
               <tr>
-                <td>eifshifb</td>
+                <td><a href="#" class="link">eifshifb</a></td>
                 <td class="ta-c">홍길동</td>
-                <td class="ta-c"><button type="button" class="btn btn--small3 btn--radius">삭제</button></td>
+                <td class="ta-c"><button type="button" class="btn btn--small3 btn--grayline">삭제</button></td>
               </tr>
             </tbody>
           </table>
@@ -151,4 +126,58 @@
 			</div>
 		</article>
 	</section>
+
+  <!-- 팝업 :: 관리자 등록 -->
+  <div class="popBasic typeAdmin" id="popAdmin">
+    <div class="inner">
+      <h2 class="ta-c">관리자 등록</h2>
+      <div class="inputGroup">
+        <div class="row">
+          <div class="th">아이디</div>
+          <div class="td"><input type="text" placeholder="제목을 작성해주세요." /></div>
+        </div>
+        <div class="row">
+          <div class="th">이름</div>
+          <div class="td"><input type="text" placeholder="이름을 입력해주세요." /></div>
+        </div>
+        <div class="row">
+          <div class="th">비밀번호</div>
+          <div class="td"><input type="password" placeholder="비밀번호를 입력해주세요." /></div>
+        </div>
+      </div>
+      <div class="btnArea ta-c mt50">
+        <button type="button" class="btn btn--large2 btn--white">취소</button>
+        <button type="button" class="btn btn--large2 ml10">등록</button>
+      </div>
+    </div>
+  </div>
+  <!-- //팝업 :: 관리자 등록 -->
+
+  <!-- 팝업 :: 관리자 정보 수정 -->
+  <div class="popBasic typeAdmin" id="popAdminModify">
+    <div class="inner">
+      <h2 class="ta-c">관리자 등록</h2>
+      <div class="inputGroup">
+        <div class="row">
+          <div class="th">아이디</div>
+          <div class="td"><input type="text" value="aleifnsp" placeholder="제목을 작성해주세요." /></div>
+        </div>
+        <div class="row">
+          <div class="th">이름</div>
+          <div class="td"><input type="text" value="홍길동" placeholder="이름을 입력해주세요." /></div>
+        </div>
+        <div class="row">
+          <div class="th">비밀번호</div>
+          <div class="td"><input type="password" value="12341234" placeholder="비밀번호를 입력해주세요." /></div>
+        </div>
+      </div>
+      <div class="btnArea ta-c mt50">
+        <button type="button" class="btn btn--large2 btn--white">취소</button>
+        <button type="button" class="btn btn--large2 ml10">수정하기</button>
+      </div>
+    </div>
+  </div>
+  <!-- //팝업 :: 관리자 정보 수정 -->
+
+  <div id="dim"></div>
 </html>
