@@ -173,8 +173,6 @@ span.imp { color:#f00; line-height:1; vertical-align:middle; }
 .boxMypage ul { margin-top:25px; }
 .boxMypage ul li a { display:block; line-height:42px; }
 
-.contents { max-width:1000px; }
-
 .contTop { margin-bottom:20px; position:relative; }
 .contTop h2 { font-size:20px; font-weight:700; }
 .contTop h2.size-sm { font-size:16px; }
@@ -190,7 +188,7 @@ span.imp { color:#f00; line-height:1; vertical-align:middle; }
 .boxMemberInfo .item .cont:before { content:''; width:1px; height:12px; position:absolute; left:0; top:50%; background:rgba(0,0,0,.2); transform:translateY(-50%); }
 
 .boxDashboard { display:flex; justify-content:space-between; }
-.boxDashboard .row { width:490px; }
+.boxDashboard .row { width:calc(50% - 10px); }
 .boxDashboard h6 { margin-bottom:15px; font-size:16px; font-weight:700; }
 .boxDashboard .inBox { height:140px; position:relative; padding:20px 40px; border:1px solid #ddd; }
 .boxDashboard .inBox dl { overflow:hidden; font-size:14px; }
