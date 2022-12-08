@@ -233,8 +233,8 @@ span.imp { color:#f00; line-height:1; vertical-align:middle; }
 .tableBasic tbody td button.btnFold { width:50px; height:34px; position:relative; background:url('../images/iconFold.png') center center no-repeat; font-size:0; text-indent:-99999px; transition:all .3s; }
 .tableBasic tbody td button.btnFold.is--open { transform:rotate(180deg); }
 .tableBasic tbody td span.status { width:72px; height:32px; display:inline-block; border:1px solid #ededed; background:#000; text-align:center; color:#fff; font-size:12px; vertical-align:middle; line-height:30px; }
-.tableBasic tbody td span.status.fin { border:1px solid #000; background:#fff; color:#000; }
-.tableBasic tbody td span.status.cancel { border:0; background:transparent; color:#000; }
+.tableBasic tbody td span.status.fin { border:0; background:transparent; color:#004ee2; }
+.tableBasic tbody td span.status.cancel { border:0; background:transparent; color:#f00; }
 
 .tableBasic tbody tr.open--sub td { background:#fafafa; border-color:rgba(112,112,112,.08); }
 .tableBasic tbody tr.sub td { padding-top:20px; padding-bottom:20px; background:#fafafa; }
